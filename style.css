@@ -1,0 +1,64 @@
+body {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+h4 {
+    font-size: 35px;
+    font-weight: 500;
+}
+  
+  .clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #444;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 90%;
+  }
+  
+  #time {
+    font-size: 48px;
+    animation: glow 1s infinite alternate;
+  }
+  
+  #location {
+    margin-top: 10px;
+    font-size: 24px;
+    animation: glow 1s infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+    }
+    to {
+      text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    #time {
+      font-size: 36px;
+    }
+  
+    #location {
+      font-size: 18px;
+    }
+  
+    .clock {
+      padding: 10px;
+    }
+  }
+  
